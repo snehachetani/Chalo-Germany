@@ -165,17 +165,25 @@ img {
 /*-------------------------------
     03. Navigation Bar CSS
 -------------------------------*/
-.navbar {
-    background-color: #1D262E;
+.top-nav {
+    background-color: #000000;
+    height: 30px; /* Adjust the height as needed */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    background-color: #DD0000;
     display: flex;
     margin: auto;
     position: fixed;
+    height: 50px;
     width: 100%;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     z-index: 1000;
 }
-.antpod-logo {
+.चलोGermany-logo {
     width: 225px;
     height: auto;
     padding: 5px;
@@ -184,7 +192,7 @@ img {
 .menu {
     position: absolute;
     right: 1em;
-    top: 8px;
+    top: 6px;
 }
 .link {
     float: left;
@@ -192,11 +200,14 @@ img {
 }
 .link a {
     display: block;
+    position: relative;
+    top: -5px;
     font-size: 20px;
-    color: #00BB31;
+    color: #ffce00;
     text-align: center;
-    padding: 20px;
-    padding-top: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
     transition: all 0.5s;
 }
