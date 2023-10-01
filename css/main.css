@@ -22,6 +22,7 @@ Author Name: Soumya Shaw
     01. General CSS
 ----------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -197,7 +198,7 @@ li {
     background-repeat: none;
     opacity: 0;
     z-index: 0;
-    filter: brightness(50%);
+    filter: brightness(40%);
     animation: imageAnimation 54s linear infinite 0s; 
 }
 .cb-slideshow li div {
@@ -209,13 +210,15 @@ li {
     text-align: center;
     opacity: 0;
     color: #fff;
+    animation: titleAnimation 54s linear infinite 0s; 
 }
 .cb-slideshow li div h3 { 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
     font-size: 120px;
     padding: 0;
     line-height: 200px;
     color: #fff;
+    
 }
 .cb-slideshow li:nth-child(1) span { 
     background-image: url(../img/bg/img1.jpg);
