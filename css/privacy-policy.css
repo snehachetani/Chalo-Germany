@@ -1,0 +1,33 @@
+/* CSS Document
+Project Name: AntPod Website
+Version:  1.0
+Author Name: Soumya Shaw
+
+*****=====***** TABLE OF CONTENT *****=====*****
+
+
+*/
+
+body {
+    color: #1D262E;
+    text-align: justify;
+}
+
+.main-content {
+    padding: 60px;
+    padding-top: 100px;
+}
+
+.policy-heading {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.minor-heading {
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 1000;
+}
