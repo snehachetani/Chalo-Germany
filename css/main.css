@@ -116,13 +116,13 @@ img {
     padding: 10px 0;
 }
 .चलोGermany-logo {
-    width: 225px;
+    width: 190px;
     height: auto;
-    padding: 5px;
     position: relative;
-    top: 25px;
-    margin-left: 20px;
+    top: 11px;
+    margin: 5px;
 }
+
 .menu {
     position: absolute;
     right: 1em;
@@ -217,7 +217,7 @@ li {
     font-size: 120px;
     padding: 0;
     line-height: 200px;
-    color: #fff;
+    color: #ffb338;
     
 }
 .cb-slideshow li:nth-child(1) span { 
@@ -316,6 +316,18 @@ li {
 @media screen and (max-width: 600px) { 
     .cb-slideshow li div h3 { font-size: 80px }
 }
+
+div.bg {
+    background-image: repeating-linear-gradient( 105deg, 
+      var(--gold) 0% , 
+      var(--dark-shadow) 5%,
+      var(--gold) 12%);
+    color: #ffb338;
+    filter: drop-shadow(5px 15px 15px black);
+    transform: scaleY(1.05);
+    transform-origin: top;
+    
+  }
 
 
 
