@@ -90,79 +90,6 @@ img {
     padding-bottom: 30px;
 }
 
-/*----------------------
-    02. Pre Loader CSS
-----------------------*/
-#preloader {
-    position: relative;
-    z-index: 1;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right bottom, #1D262E, #1D262E, black);
-}
-#main-content {
-    display: none;
-}
-.sapling {
-    width: 5em;
-    height: 17.5em;
-    font-size: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.branch {
-    position: absolute;
-    width: 0.2em;
-    height: inherit;
-    background-color: burlywood;
-    border-radius: 25%;
-    transform-origin: bottom;
-}
-.leaves {
-    position: absolute;
-    width: inherit;
-    height: 80%;
-    display: flex;
-    flex-direction: column-reverse;
-}
-.leaves span {
-    width: 2.5em;
-    height: 2.5em;
-    background-color: limegreen;
-}
-.leaves span:nth-child(odd) {
-    align-self: flex-start;
-    border-top-right-radius: 3em;
-    border-bottom-left-radius: 3em;
-    transform-origin: right bottom;
-}
-.leaves span:nth-child(even) {
-    align-self: flex-end;
-    border-top-left-radius: 3em;
-    border-bottom-right-radius: 3em;
-    transform-origin: left bottom;
-}
-.fadein {
-    position: relative;
-    -webkit-animation-name: fade-in;
-    -webkit-animation-duration: 1s;
-    animation-name: fade-in;
-    animation-duration: 1s;
-}
-@-webkit-keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 /*-------------------------------
     03. Navigation Bar CSS
 -------------------------------*/
@@ -247,6 +174,9 @@ nav#dot-nav a.active {
     position: relative;
     overflow: hidden;
 }
+li {
+    list-style-type: none;
+}
 .cb-slideshow,
 .cb-slideshow:after { 
     width: 100%;
@@ -268,7 +198,7 @@ nav#dot-nav a.active {
     opacity: 0;
     z-index: 0;
     filter: brightness(50%);
-    animation: imageAnimation 36s linear infinite 0s; 
+    animation: imageAnimation 54s linear infinite 0s; 
 }
 .cb-slideshow li div {
     z-index: 1000;
@@ -279,11 +209,10 @@ nav#dot-nav a.active {
     text-align: center;
     opacity: 0;
     color: #fff;
-    animation: titleAnimation 36s linear infinite 0s; 
 }
 .cb-slideshow li div h3 { 
     font-family: 'Roboto', sans-serif;
-    font-size: 240px;
+    font-size: 120px;
     padding: 0;
     line-height: 200px;
     color: #fff;
@@ -311,6 +240,18 @@ nav#dot-nav a.active {
     background-image: url(../img/bg/img6.jpg);
     animation-delay: 30s; 
 }
+.cb-slideshow li:nth-child(7) span { 
+    background-image: url(../img/bg/img7.jpg);
+    animation-delay: 36s; 
+}
+.cb-slideshow li:nth-child(8) span { 
+    background-image: url(../img/bg/img8.jpg);
+    animation-delay: 42s; 
+}
+.cb-slideshow li:nth-child(9) span { 
+    background-image: url(../img/bg/img9.jpg);
+    animation-delay: 48s; 
+}
 
 .cb-slideshow li:nth-child(2) div { 
     animation-delay: 6s; 
@@ -327,21 +268,30 @@ nav#dot-nav a.active {
 .cb-slideshow li:nth-child(6) div { 
     animation-delay: 30s; 
 }
+.cb-slideshow li:nth-child(7) div { 
+    animation-delay: 3s6; 
+}
+.cb-slideshow li:nth-child(8) div { 
+    animation-delay: 42s; 
+}
+.cb-slideshow li:nth-child(9) div { 
+    animation-delay: 48s; 
+}
 @keyframes imageAnimation { 
 	0% {
 	    opacity: 0;
 	    animation-timing-function: ease-in;
 	}
-	8% {
+	5% {
 	    opacity: 1;
 	    transform: scale(1.05);
 	    animation-timing-function: ease-out;
 	}
-	17% {
+	11% {
 	    opacity: 1;
 	    transform: scale(1.1);
 	}
-	25% {
+	16% {
 	    opacity: 0;
 	    transform: scale(1.15);
 	}
@@ -352,9 +302,9 @@ nav#dot-nav a.active {
 }
 @keyframes titleAnimation { 
     0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
+    5% { opacity: 1 }
+    11% { opacity: 1 }
+    16% { opacity: 0 }
     100% { opacity: 0 }
 }
 @media screen and (max-width: 1140px) { 
