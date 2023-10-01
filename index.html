@@ -35,443 +35,188 @@ Author Name: Soumya Shaw, Sneha Chetani
     <script src="https://unpkg.com/tippy.js@6"></script>
 </head>
 
-<body onload="loadtimeout()">
+<body>
 
-    <!-- Preloader Start -->
-    <div id="preloader">
-        <figure class="sapling">
-            <div class="branch"></div>
-            <div class="leaves">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </figure>
+    <!-- Navigation Start -->
+    <nav id="dot-nav"></nav>
+    <div class="navbar">
+        <div class="antpod-logo">
+            <a href="http://www.antpod.io/"><img src="img/logo/White_Complete_Hori.png" alt="AntPod"></a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li class="link"><a href="#home">Home</a></li>
+                <li class="link"><a href="#technology">Technology</a></li>
+                <li class="link"><a href="#about-us">About Us</a></li>
+                <li class="link"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
     </div>
-    <!-- Preloader End -->
+    <!-- Navigation End-->
+        
+    
+    <!-- Contact Us Start -->
+    <section class="contact-us-area" id="contact-us">
+        <h2 class="heading" id="contact-us-heading">Contact Us</h2>
+        <div class="outer-contact">
+            <div class="inner-contact" id="inner-contact-left">
+                <div class="form">
+                    <form id="contact-us-form" action="https://formspree.io/xaypajbr" method="POST">
+                        <div class="form-group">
+                            <input id="first-name" name="First Name" type="text" class="form-control" placeholder="First Name" required>
+                            <input id="last-name" name="Last Name" type="text" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="company-name" name="Company Name" type="text" class="form-control" placeholder="Company Name" required>
+                            <input id="email-id" name="Email" type="email" class="form-control" placeholder="Mail ID" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="phone-no" name="Phone Number" type="tel" class="form-control" placeholder="Phone Number" required>
+                            <select id="enquiry" name="Nature of Enquiry" class="form-control" required>
+                                <option hidden="">Nature of Enquiry</option>
+                                <option>Product / Service</option>
+                                <option>Business Collaboration</option>
+                                <option>Technology Partner</option>
+                                <option>Investors</option>
+                                <option>Careers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="description" name="Description" class="form-control" rows="6" cols="60" placeholder="Brief Description of enquiry" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" class="form-control" id="check-me" onchange="checkbox()"/>
+                            <label id="check-me-label" for="check-me">I have read and agree with the <a id="privacy-policy-link" href="privacy-policy.html" target="_blank">Privacy Policy</a></label>
+                        </div>
+                        <div class="submit-placement">
+                            <button type="submit" id="submit-button" title="Please agree to the Privacy Policy" class="btn btn-success" value="Send">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="inner-contact">
+                <div class="map">
+                    <div class="contact-us-inner">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9493626471117!2d80.24500191413583!3d13.038895216927598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267b7e87b8e77%3A0x588f9e91541227be!2sWorkafella%20-%20High%20Street%2C%20Teynampet!5e0!3m2!1sen!2sin!4v1592727903699!5m2!1sen!2sin" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="write-outer">
+            <div class="write">
+            <strong>Or, write to us</strong>
+            <div class="mail"><i class="fa fa-envelope"></i>contactus@antpod.io</div>
+            <div class="mail" id="phone"><i class="fa fa-phone"></i>+91 95000 98407</div>
+        </div>
+        </div>
+    </section>
+    <!-- Contact Us End -->
 
-    <div style="display:none;" id="main-content" class="fadein">
-
-        <!-- Navigation Start -->
-        <nav id="dot-nav"></nav>
-        <div class="navbar">
-            <div class="antpod-logo">
-                <a href="http://www.antpod.io/"><img src="img/logo/White_Complete_Hori.png" alt="AntPod"></a>
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="row">
+            <div class="col-4">
+                <div class="antpod-logo" id="footer-logo">
+                    <a href="http://www.antpod.io/">
+                        <img class="logo-img" src="img/logo/Green_Complete_Hori.png" alt="AntPod">
+                    </a>
+                </div>
             </div>
 
-            <div class="menu">
-                <ul>
-                    <li class="link"><a href="#home">Home</a></li>
-                    <li class="link"><a href="#technology">Technology</a></li>
-                    <li class="link"><a href="#about-us">About Us</a></li>
-                    <li class="link"><a href="#contact-us">Contact Us</a></li>
+            <div class="col-4" id="col-4-pc-1">
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="#technology">Technology</a></li>
+                    <li class="footer-li"><a href="#about-us">About Us</a></li>
                 </ul>
             </div>
-        </div>
-        <!-- Navigation End-->
-        
-        <div class="tech-gap"></div>
-        <!-- Home Start -->
-        <section class="home-area" id="home">
-            <div class="home-content">
-                <p>
-                    We seek to seamlessly integrate the nuances of image processing,
-                    machine learning and telemetric analysis to nurture optimised
-                    agricultural solutions.
-                </p>
-                <div class="know-more"><a href="#technology">Know More</a></div>
+
+            <div class="col-4" id="col-4-pc-2">
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="#team">The Team</a></li>
+                    <li class="footer-li"><a href="#contact-us">Contact Us</a></li>
+                </ul>
             </div>
-        </section>
-        <!-- Home End -->
 
 
-        <!-- Technology Start -->
-        <section class="technology-area" id="technology">
-            <h2 class="heading">Technology</h2>
-            <div class="tech-bounding">
-
-                <div class="tech-right-1-mobile">
-                    <div class="tech-head">Remote Farm Management</div>
-                </div>
-
-                <div class="tech-left-1">
-                    <div class="tech-row-1">
-
-                        <div class="tech-icon-mobile">
-                            <img class="tech-icon-inner" src="img/assets/satellite.png" alt="">
-                        </div>
-
-                        <div class="tech-row"><h4>Satellite Imagery of Farmlands</h4></div>
-                        <div class="tech-icon">
-                            <img class="tech-icon-inner" src="img/assets/satellite.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="tech-row-1">
-
-                        <div class="tech-icon-mobile">
-                            <img class="tech-icon-inner" src="img/assets/network.png" alt="">
-                        </div>
-
-                        <div class="tech-row"><h4>Computation of Image Data</h4></div>
-                        <div class="tech-icon">
-                            <img class="tech-icon-inner" src="img/assets/network.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="tech-row-1">
-
-                        <div class="tech-icon-mobile">
-                            <img class="tech-icon-inner" src="img/assets/phone.png" alt="">
-                        </div>
-
-                        <div class="tech-row" id="data-analysis"><h4>Data Analysis Displayed on Phone</h4></div>
-                        <div class="tech-icon">
-                            <img class="tech-icon-inner" src="img/assets/phone.png" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tech-right-1">
-                    <div class="tech-head">Remote Farm <br> Management</div>
-                </div>
-            </div>
-            <hr class="dashed-border-1-1">
-            <hr class="dashed-border-1-2">
-            <hr class="dashed-border-1-3">
-            <hr class="dashed-border-1-4">
-
-            <div class="tech-gap"></div>
-            <div class="tech-gap"></div>
-
-            <div class="tech-bounding">
-                <div class="tech-right-1" id="tech-right-1-mobile">
-                    <div class="tech-head-2">Unmanned Vehicle</div>
-                </div>
-
-                <div class="tech-left-1">
-                    <div class="tech-row-1">
-                        <div class="tech-icon-2">
-                            <img class="tech-icon-inner" src="img/assets/compass.png" alt="">
-                        </div>
-                        <div class="tech-row-2"><h4>Locate the Problem Area on the Farms</h4></div>
-                    </div>
-
-                    <div class="tech-row-1">
-                        <div class="tech-icon-2">
-                            <img class="tech-icon-inner" src="img/assets/map.png" alt="">
-                        </div>
-                        <div class="tech-row-2"><h4>Optimised Path Planning and Navigation</h4></div>
-                    </div>
-
-                    <div class="tech-row-1">
-                        <div class="tech-icon-2">
-                            <img class="tech-icon-inner" src="img/assets/idea.png" alt="">
-                        </div>
-                        <div class="tech-row-2"><h4>Implement the Necessary Solution</h4></div>
-                    </div>
-                </div>
-            </div>
-            <hr class="dashed-border-2-1">
-            <hr class="dashed-border-2-2">
-            <hr class="dashed-border-2-3">
-            <hr class="dashed-border-2-4">
-        </section>
-        <!-- Technology End -->
-
-        <!-- About Us Start -->
-        <section class="about-us-area" id="about-us">
-            <h2 class="heading" id="about-us-heading">About Us</h2>
-            <div class="about-bounding">
-                <div class="about-left">
-                    <img class="venn" src="img/assets/venn%20diagram.png" alt="Venn Diagram">
-                </div>
-
-                <div class="about-right">
-                    <div class="principles">
-                        <div class="principles-text">Our Principles</div>
-                    </div>
-                    <div class="about-text">
-                        <p class="about-text-green">
-                            When technology can seed agriculture, why think twice ?
-                        </p>
-                        <p>
-                            Antpod was born with the idea of providing precision surveillance
-                            and autonomous vehicles for the purpose of agriculture.
-                            <br><br>
-                            We identify and implement efficient technology to sustainably
-                            enhance our agricultural practices.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="about-bottom">
-                <div class="road">
-                    <p class="road-ahead">Road ahead</p>
-                </div>
-                <div class="animation-tree">
-                    <figure class="tree">
-                        <div class="arrow"></div>
-                        <div class="node">
-                            <span class="leaf">
-                                <div class="circle-bottom-2"></div>
-                                <div class="tree-text-3">Crop Surveillance</div>
-                            </span>
-                            <span class="no-leaf">
-                                <div class="circle-top"></div>
-                                <div class="tree-text-2">Unmanned Ground Surveillance</div>
-                            </span>
-                            <span class="no-leaf">
-                                <div class="circle-bottom"></div>
-                                <div class="tree-text">Unmanned Aerial Surveillance</div>
-                            </span>
-                            <span class="no-leaf">
-                                <div class="circle-top"></div>
-                                <div class="tree-text-2">Integrated Monitoring Network</div>
-                            </span>
-                            <span class="direction">
-                                <div class="arrow-top"></div>
-                                <div class="arrow-bottom"></div>
-                            </span>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <!-- About Us End -->
-
-        <!-- Team Start -->
-        <div class="tech-gap"></div>
-        <div class="tech-gap"></div>
-        <div class="team-area" id="team">
-            <h2 class="heading" id="the-team">The Team</h2>
-            <div class="team-bounding">
-                <div class="founder">
-                    <div class="team-box">
-                        <div class="pic">
-                            <img class="team-pic" src="img/Team/Ambareesh.jpeg" alt="Ambareesh Ramakrishnan">
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h4 id="founder-name"><a href="https://www.linkedin.com/in/ambareesh-ramakrishnan/" target="_blank">Ambareesh Ramakrishnan</a></h4>
-                        <span>Founder & Chief Engineer</span>
-                    </div>
-                </div>
-
-                <div class="team-mates">
-                    <div class="row-1">
-                        <div class="team-box-2">
-                            <div class="pic">
-                                <img class="team-pic" src="img/Team/Aditya.jpeg" alt="Aditya Ratan">
-                            </div>
-                        </div>
-                        <div class="team-info">
-                            <h4>Aditya Ratan J</h4>
-                            <span>Systems Development</span>
-                        </div>
-
-                        <div class="team-box-2">
-                            <div class="pic">
-                                <img class="team-pic" src="img/Team/Suhas%20R%20Vaidya.jpg" alt="Suhas">
-                            </div>
-                        </div>
-                        <div class="team-info">
-                            <h4>Suhas <br id="suhas-break"> R Vaidya</h4>
-                            <span>Systems Integration</span>
-                        </div>
-                    </div>
-
-                    <div class="row-2">
-                        <div class="team-box-2">
-                            <div class="pic">
-                                <img class="team-pic" src="img/Team/P%20R%20Kaaviya.JPG" alt="Kaaviya">
-                            </div>
-                        </div>
-                        <div class="team-info" id="kaaviya">
-                            <h4>P R Kaaviya</h4>
-                            <span>Systems Development</span>
-                        </div>
-
-                        <div class="team-box-2">
-                            <div class="pic">
-                                <img class="team-pic" src="img/Team/Manish.jpeg" alt="Manish">
-                            </div>
-                        </div>
-                        <div class="team-info">
-                            <h4>Manish Meganathan</h4>
-                            <span>Systems Integration</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
-
-        <!-- Contact Us Start -->
-        <section class="contact-us-area" id="contact-us">
-            <h2 class="heading" id="contact-us-heading">Contact Us</h2>
-            <div class="outer-contact">
-                <div class="inner-contact" id="inner-contact-left">
-                    <div class="form">
-                        <form id="contact-us-form" action="https://formspree.io/xaypajbr" method="POST">
-                            <div class="form-group">
-                                <input id="first-name" name="First Name" type="text" class="form-control" placeholder="First Name" required>
-                                <input id="last-name" name="Last Name" type="text" class="form-control" placeholder="Last Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input id="company-name" name="Company Name" type="text" class="form-control" placeholder="Company Name" required>
-                                <input id="email-id" name="Email" type="email" class="form-control" placeholder="Mail ID" required>
-                            </div>
-                            <div class="form-group">
-                                <input id="phone-no" name="Phone Number" type="tel" class="form-control" placeholder="Phone Number" required>
-                                <select id="enquiry" name="Nature of Enquiry" class="form-control" required>
-                                    <option hidden="">Nature of Enquiry</option>
-                                    <option>Product / Service</option>
-                                    <option>Business Collaboration</option>
-                                    <option>Technology Partner</option>
-                                    <option>Investors</option>
-                                    <option>Careers</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="description" name="Description" class="form-control" rows="6" cols="60" placeholder="Brief Description of enquiry" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" class="form-control" id="check-me" onchange="checkbox()"/>
-                                <label id="check-me-label" for="check-me">I have read and agree with the <a id="privacy-policy-link" href="privacy-policy.html" target="_blank">Privacy Policy</a></label>
-                            </div>
-                            <div class="submit-placement">
-                                <button type="submit" id="submit-button" title="Please agree to the Privacy Policy" class="btn btn-success" value="Send">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="inner-contact">
-                    <div class="map">
-                        <div class="contact-us-inner">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9493626471117!2d80.24500191413583!3d13.038895216927598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267b7e87b8e77%3A0x588f9e91541227be!2sWorkafella%20-%20High%20Street%2C%20Teynampet!5e0!3m2!1sen!2sin!4v1592727903699!5m2!1sen!2sin" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="write-outer">
-                <div class="write">
-                <strong>Or, write to us</strong>
-                <div class="mail"><i class="fa fa-envelope"></i>contactus@antpod.io</div>
-                <div class="mail" id="phone"><i class="fa fa-phone"></i>+91 95000 98407</div>
-            </div>
-            </div>
-        </section>
-        <!-- Contact Us End -->
-
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="row">
+            <div class="flex-mobile">
                 <div class="col-4">
-                    <div class="antpod-logo" id="footer-logo">
-                        <a href="http://www.antpod.io/">
-                            <img class="logo-img" src="img/logo/Green_Complete_Hori.png" alt="AntPod">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-4" id="col-4-pc-1">
                     <ul class="footer-ul">
                         <li class="footer-li"><a href="#technology">Technology</a></li>
                         <li class="footer-li"><a href="#about-us">About Us</a></li>
                     </ul>
                 </div>
 
-                <div class="col-4" id="col-4-pc-2">
+                <div class="col-4">
                     <ul class="footer-ul">
                         <li class="footer-li"><a href="#team">The Team</a></li>
                         <li class="footer-li"><a href="#contact-us">Contact Us</a></li>
                     </ul>
                 </div>
-
-
-                <div class="flex-mobile">
-                    <div class="col-4">
-                        <ul class="footer-ul">
-                            <li class="footer-li"><a href="#technology">Technology</a></li>
-                            <li class="footer-li"><a href="#about-us">About Us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-4">
-                        <ul class="footer-ul">
-                            <li class="footer-li"><a href="#team">The Team</a></li>
-                            <li class="footer-li"><a href="#contact-us">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <ul class="footer-ul-follow-us">
-                        <li><strong>Follow Us</strong></li>
-                    </ul>
-                    <div class="social-media">
-                        <div class="social-media-inner">
-                            <a href="https://www.linkedin.com/company/antpod" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
-                            <a href="https://www.facebook.com/antpod.io/" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
-                            <a href="https://www.instagram.com/antpod.io/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
-                            <a href="https://twitter.com/antpod_io" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <div class="privacy-policy">
-                    <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
-                </div>
-                <div class="text-center" id="copyright">
-                    <p>Copyright © 2020 ANTPOD Designs Private Limited. All rights reserved.</p>
-                </div>
-                <div class="image-courtesy">
-                    Home Page Image Courtesy: <a href="https://ivan.graphics/" target="_blank">Ivan Bandura</a>
+
+            <div class="col-4">
+                <ul class="footer-ul-follow-us">
+                    <li><strong>Follow Us</strong></li>
+                </ul>
+                <div class="social-media">
+                    <div class="social-media-inner">
+                        <a href="https://www.linkedin.com/company/antpod" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
+                        <a href="https://www.facebook.com/antpod.io/" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+                        <a href="https://www.instagram.com/antpod.io/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                        <a href="https://twitter.com/antpod_io" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
-
-        <!-- Javascript -->
-        <script type="text/javascript" src="js/preloader.js"></script>
-        <script type="text/javascript" src="js/dot-nav.js"></script>
-        <!-- Custom JS -->
-        <script src="js/custom.js"></script>
-        <script>
-            $('a[href^="#"]').on('click', function(event) {
-
-                let target = $(this.getAttribute('href'));
-
-                if( target.length ) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 50
-                    }, 1000);
-                }
-
-            });
-            
-            var checker = document.getElementById('check-me');
-            var sendbtn = document.getElementById('submit-button');
-            checker.checked = false;
-            sendbtn.disabled = true;
-            
-            function checkbox() {
-                document.getElementById('submit-button').disabled = !checker.checked;
-                if(checker.checked) {
-                    sendbtn.removeAttribute("title");
-                }
-                else {
-                    sendbtn.setAttribute("title", "Please agree to the Privacy Policy");
-                }
-            }
-        </script>
+        <div class="footer-bottom">
+            <div class="privacy-policy">
+                <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+            </div>
+            <div class="text-center" id="copyright">
+                <p>Copyright © 2020 ANTPOD Designs Private Limited. All rights reserved.</p>
+            </div>
+            <div class="image-courtesy">
+                Home Page Image Courtesy: <a href="https://ivan.graphics/" target="_blank">Ivan Bandura</a>
+            </div>
+        </div>
     </div>
+    <!-- Footer End -->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/dot-nav.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+    <script>
+        $('a[href^="#"]').on('click', function(event) {
+
+            let target = $(this.getAttribute('href'));
+
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 50
+                }, 1000);
+            }
+
+        });
+        
+        var checker = document.getElementById('check-me');
+        var sendbtn = document.getElementById('submit-button');
+        checker.checked = false;
+        sendbtn.disabled = true;
+        
+        function checkbox() {
+            document.getElementById('submit-button').disabled = !checker.checked;
+            if(checker.checked) {
+                sendbtn.removeAttribute("title");
+            }
+            else {
+                sendbtn.setAttribute("title", "Please agree to the Privacy Policy");
+            }
+        }
+    </script>
 </body>
 <script src="js/main.js"></script>
 </html>
