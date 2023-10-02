@@ -953,92 +953,57 @@ input[type="checkbox"]
        09. Footer CSS Start
 ----------------------------------*/
 .footer {
+    background: rgba(243, 8, 16, 0.5);
     color: #1D262E;
     font-size: 16px;
-}
-.row {
+    overflow: hidden;
+    position: relative;}
+
+/* Custom CSS for footer layout */
+.row-uni {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.col-4 {
-    flex: 1;
-    z-index: 2;
+
+.col-uni-xs-12,
+.col-uni-sm-3,
+.col-uni-md-3,
+.col-uni-lg-3 {
+    flex: 0 0 calc(25% - 20px); /* 4 columns on larger screens */
+    max-width: calc(25% - 20px);
+    margin-right: 20px;
 }
-.flex-mobile {
-    display: none;
+
+/* Custom CSS for the "Follow Us" icons */
+.footer-li-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display the icons in a row */
 }
-#footer-logo {
-    width: 225px;
-    position: relative;
-    top: 28px;
-    left: 30px;
+
+.footer-li-social li {
+    margin-right: 15px; /* Adjust the spacing between icons */
 }
-.footer-ul {
-    list-style-type: none;
-    padding: 20px;
-    position: relative;
-    left: 110px;
+
+/* Optionally, you can change the color or size of the icons */
+.footer-li-social i {
+    font-size: 20px; /* Adjust the icon size */
+    color: #333; /* Change the icon color if needed */
 }
-.footer-li {
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-.footer-li strong {
-    font-weight: bold;
-}
-.social-media {
-    padding-left: 55px;
-    font-size: 20px;
-    color: #1D262E;
-    display: flex;
-    width: 100%;
-    padding-bottom: 50px;
-    z-index: 100;
-}
-.fa {
-    padding-left: 15px;
-    padding-right: 15px;
-    transition: color 0.5s;
-    color: #1D262E;
-}
-.fa:hover {
-    color: #00BB31;
-}
-a {
-    color: black;
-}
-a:hover {
-    color: #00BB31;
-}
-.footer-ul-follow-us {
-    list-style-type: none;
-    padding: 40px;
-    padding-top: 30px;
-    padding-bottom: 7.5px;
-    position: relative;
-    left: 90px;
-    width: 60%;
-}
-.footer-li {
-    font-size: 16px;
-}
-.footer-bottom {
-    display: flex;
-}
-.privacy-policy {
-    position: relative;
-    font-size: 10px;
-    text-align: center;
-    flex: 25%;
-}
-#copyright {
-    font-size: 10px;
-    text-align: center;
-    flex: 50%;
-}
-.image-courtesy {
-    position: relative;
-    font-size: 10px;
-    text-align: center;
-    flex: 25%;
-}
+
+
+/* Adjust margins for the last column on smaller screens */
+@media (max-width: 768px) {
+    .col-uni-xs-12 {
+        margin-right: 0;
+    }}
+
+/* Clearfix to handle the last row on smaller screens */
+@media (max-width: 768px) {
+    .row-uni::after {
+        content: "";
+        clear: both;
+        display: table;
+    }}
