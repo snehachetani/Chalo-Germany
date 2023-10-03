@@ -149,7 +149,9 @@ Author Name: Soumya Shaw, Sneha Chetani
     <section class="contact-us-area">
         <h2 class="contact-us-heading">Contact Us</h2>
         <div class="outer-contact">
-            <div class="inner-contact" id="inner-contact-left">
+            <div class="inner-contact" id="inner-contact-left"></div>
+                
+            <div class="inner-contact" id="inner-contact-right">
                 <div class="form">
                     <form id="contact-us-form" action="https://formspree.io/f/xpzgojwz" method="POST">
                         <div class="form-group">
@@ -174,11 +176,11 @@ Author Name: Soumya Shaw, Sneha Chetani
                             </select>
                         </div>
                         <div class="form-group">
-                            <input id="instagram" name="Email" type="email" class="form-control" placeholder="Mail ID" required>
-                            <input id="refundable" name="Phone Number" type="tel" class="form-control" placeholder="Phone Number" required>
+                            <input id="instagram-id" name="Instagram ID" type="text" class="form-control" placeholder="Instagram ID" >
+                            <input id="referral-code" name="Referal Code" type="text" class="form-control" placeholder="Referral Code" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="description" name="Description" class="form-control" rows="6" cols="60" placeholder="Brief Description of enquiry" required></textarea>
+                            <textarea id="description" name="Description" class="form-control" rows="6" cols="60" placeholder="How did you hear about us" required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="checkbox" class="form-control" id="check-me" onchange="checkbox()"/>
@@ -190,26 +192,71 @@ Author Name: Soumya Shaw, Sneha Chetani
                     </form>
                 </div>
             </div>
-            <div class="inner-contact">
-                <div class="map">
-                    <div class="contact-us-inner">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9493626471117!2d80.24500191413583!3d13.038895216927598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267b7e87b8e77%3A0x588f9e91541227be!2sWorkafella%20-%20High%20Street%2C%20Teynampet!5e0!3m2!1sen!2sin!4v1592727903699!5m2!1sen!2sin" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                </div>
-            </div>
+            
+            
         </div>
         </div>
     </section>
     <!-- Contact Us End -->
 
-    <!-- Footer Start -->
+
+    <footer class="footer">
+        <div class="container">
+         <div class="row">
+           <div class="footer-col">
+            <h4 class="title" id="quick-links">Quick Links</h4>
+            <ul class="footer-li" id="content1">
+                <li><a href="" target="_blank">Home</a></li>
+                <li><a href="" target="_blank">Our Services</a></li>
+                <li><a href="" target="_blank">Blogs</a></li>
+                <li><a href="" target="_blank">Events</a></li>
+                <li><a href="" target="_blank">FAQs</a></li>
+                <li><a href="" target="_blank">Contact us</a></li>                 
+            </ul>
+           </div>
+           <div class="footer-col">
+            <h4 class="title" id="student-services">Student Services</h4>
+            <ul class="footer-li" id="content2">
+                <li><a href="">Application Guidance</a></li> 
+                <li><a href="">Career Counselling</a></li>
+                <li><a href="">CV Guidance</a></li>
+                <li><a href="">Visa Guidance</a></li> 
+                <li><a href="">Finance Assistance</a></li>
+                <li><a href="">Acommodation Guidance</a></li>
+            </ul>
+           </div>
+           <div class="footer-col">
+            <h4 class="title" id="contact-us">Contact Us</h4>
+            <ul class="footer-li" id="content3">
+                <li><a href="" target="Tel">Tel.</a></li>
+                <li><a href="" target="Email">Email:</a></li>
+            </ul>
+           </div>
+           <div class="footer-col">
+             <h4 class="title" id="follow-us">Follow Us</h4>
+             <ul class="footer-li-social" id="content4">
+                <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="" target="_blank"><i class="fa fa-google"></i></a></li>
+                <li><a href="" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <div class="clearfix"></div>
+            </ul>
+             </div>
+           </div>
+         </div>
+        </div>
+     </footer>
+   
+
+    <!-- Footer Start 
     <footer>
         <div class="footer">
-            <!--<img class="demo-bg" src="img/germanflag.jpg" alt="">-->
+            <img class="demo-bg" src="img/germanflag.jpg" alt="">
             <div class="container">
                 <div class="row-uni">
                     <div class="col-uni-xs-12 col-uni-sm-3 col-uni-md-3 col-uni-lg-3">
                         <h4 class="title">Quick Links</h4>
+                        <span class="animate-border border-black"></span>
                         <ul class="footer-li">
                             <li><a href="" target="_blank">Home</a></li>
                             <li><a href="" target="_blank">Our Services</a></li>
@@ -221,6 +268,7 @@ Author Name: Soumya Shaw, Sneha Chetani
                     </div>
                     <div class="col-uni-xs-12 col-uni-sm-3 col-uni-md-3 col-uni-lg-3">
                         <h4 class="title">Student Services</h4>
+                        <span class="animate-border border-black"></span>
                         <ul class="footer-li">
                             <li><a href="">Application Guidance</a></li> 
                             <li><a href="">Career Counselling</a></li>
@@ -232,6 +280,7 @@ Author Name: Soumya Shaw, Sneha Chetani
                     </div>
                     <div class="col-uni-xs-12 col-uni-sm-3 col-uni-md-3 col-uni-lg-3">
                         <h4 class="title">Contact Us</h4>
+                        <span class="animate-border border-black"></span>
                         <ul class="footer-li-contact">
                             <li><a href="" target="Tel">Tel.</a></li>
                             <li><a href="" target="Email">Email:</a></li>
@@ -240,6 +289,7 @@ Author Name: Soumya Shaw, Sneha Chetani
                     </div>   
                     <div class="col-uni-xs-12 col-uni-sm-3 col-uni-md-3 col-uni-lg-3">
                         <h4 class="title">Follow Us</h4>
+                        <span class="animate-border border-black"></span>
                         <ul class="footer-li-social">
                             <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="" target="_blank"><i class="fa fa-google"></i></a></li>
@@ -251,7 +301,7 @@ Author Name: Soumya Shaw, Sneha Chetani
                 </div>
             </div>
         </div>
-    </footer>
+    </footer -->
     <!-- Footer End -->
 
     <!-- Javascript -->
