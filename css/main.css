@@ -95,7 +95,7 @@ img {
     03. Navigation Bar CSS
 -------------------------------*/
 .top-nav {
-    background-color: #000000;
+    background-color: #24262b;
     height: 30px; 
     width: 100%;
     position: fixed;
@@ -114,6 +114,9 @@ img {
     width: 100%;
     z-index: 1000;
     padding: 10px 0;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
 }
 .चलोGermany-logo {
     height: 100%;
@@ -156,10 +159,10 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .link a:hover {
-    color: #ffce00;
+    transform:scale(1.1)
 }
 nav#dot-nav {
     position: fixed;
@@ -1018,12 +1021,14 @@ body{
     text-align: left;
     
   }
-  #content1{
-    padding-left: 30px;
+  #footer-content1{
+    padding-left: 90px;
   }
-  #content2{
-    padding-left: 20px;
+
+  #footer-content2{
+    padding-left: 60px;
   }
+  
   .footer-li-social {
     list-style: none;
     padding: 0;
@@ -1056,12 +1061,7 @@ body{
     box-sizing: border-box;
     width: 50px;
   }
-  @media (max-width: 768px) {
-    .footer-col h4::before {
-        width: 40px; /* Adjust the width for smaller screens */
-        left: 40px;
-    }
-}
+
   .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
   }
@@ -1130,134 +1130,3 @@ body{
 
 
 
-/*.footer {
-    background: rgba(243, 8, 16, 0.5);
-    color: #1D262E;
-    font-size: 16px;
-    overflow: hidden;
-    padding: 20px 0;
-}
-
-
-.animate-border {
-    position: relative;
-    display: block;
-    width: 115px;
-    height: 3px;
-    background: #DD0000; }
-    
-    .animate-border:after {
-    position: absolute;
-    content: "";
-    width: 35px;
-    height: 3px;
-    left: 0;
-    bottom: 0;
-    border-left: 10px solid #ffce00;
-    border-right: 10px solid #ffce00;
-    -webkit-animation: animborder 2s linear infinite;
-    animation: animborder 2s linear infinite; }
-    
-    @-webkit-keyframes animborder {
-    0% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px); }
-    100% {
-        -webkit-transform: translateX(113px);
-        transform: translateX(113px); } }
-    
-    @keyframes animborder {
-    0% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px); }
-    100% {
-        -webkit-transform: translateX(113px);
-        transform: translateX(113px); } }
-    
-    .animate-border.border-white:after {
-    border-color: #fff; }
-    
-    .animate-border.border-yellow:after {
-    border-color: #F5B02E; }
-    
-    .animate-border.border-orange:after {
-    border-right-color: #007bff;
-    border-left-color: #007bff; }
-    
-    .animate-border.border-ash:after {
-    border-right-color: #EEF0EF;
-    border-left-color: #EEF0EF; }
-    
-    .animate-border.border-offwhite:after {
-    border-right-color: #F7F9F8;
-    border-left-color: #F7F9F8; }
-    
-    /* Animated heading border */
-   /* @keyframes primary-short {
-    0% {
-        width: 15%; }
-    50% {
-        width: 90%; }
-    100% {
-        width: 10%; } }
-    
-    @keyframes primary-long {
-    0% {
-        width: 80%; }
-    50% {
-        width: 0%; }
-    100% {
-        width: 80%; } }     
-
-/* Custom CSS for footer layout */
-/*.container{
-    max-width: 1170px;
-    margin:auto;
-}
-.row-uni {
-    display: flex;
-    flex-wrap: wrap;
- }
- ul{
-    list-style: none;
-  }
-.col-uni-xs-12,
-.col-uni-sm-3,
-.col-uni-md-3,
-.col-uni-lg-3 {
-    flex: 0 0 calc(25% - 20px); /* 4 columns on larger screens */
-    /*max-width: calc(25% - 20px);
-    position: relative;
-}
-
-/* Custom CSS for the "Follow Us" icons */
-/*.footer-li-social {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;} /* Display the icons in a row */
-
-
-/*.footer-li-social li {
-    margin-right: 15px;} /* Adjust the spacing between icons */
-
-
-/* Optionally, you can change the color or size of the icons */
-/*.footer-li-social i {
-    font-size: 20px; /* Adjust the icon size */
-    /*color: #333; }/* Change the icon color if needed */
-
-
-/* Adjust margins for the last column on smaller screens */
-/*@media (max-width: 768px) {
-    .col-uni-xs-12 {
-        margin-right: 0;
-    }}
-
-/* Clearfix to handle the last row on smaller screens */
-/*@media (max-width: 768px) {
-    .row-uni::after {
-        content: "";
-        clear: both;
-        display: table;
-    }}*/
