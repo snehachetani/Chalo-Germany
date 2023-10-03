@@ -108,10 +108,8 @@ img {
     display: flex;
     margin: auto;
     position: fixed;
-    height: 80px;
+    height: 90px;
     width: 100%;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
     z-index: 1000;
     padding: 10px 0;
 }
@@ -124,9 +122,11 @@ img {
 }
 
 .menu {
-    position: absolute;
+    /*position: absolute;
     right: 1em;
-    top: 6px;
+    top: 6px;*/
+    float: right;
+    background-color: #00BB31;
 }
 .link {
     float: left;
@@ -167,6 +167,12 @@ nav#dot-nav a.active {
     width: 9px;
     height: 9px;
 }
+
+
+
+
+
+
 /*--------------------------------
       04. Home CSS
 ----------------------------------*/
@@ -217,7 +223,7 @@ li {
     font-size: 120px;
     padding: 0;
     line-height: 200px;
-    color: #ffb338;
+    color: #ffffff;
     
 }
 .cb-slideshow li:nth-child(1) span { 
