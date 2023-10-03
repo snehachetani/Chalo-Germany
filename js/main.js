@@ -17,14 +17,5 @@ function onUpdate() {
 }
 
 /*-------------*/
-/* Pre Loader */
-let timeout;
-function loadtimeout() {
-    timeout = setTimeout(showPage, 2500);
-}
 
-function showPage() {
-    document.getElementById("preloader").style.display = "none";
-    document.getElementById("main-content").style.display = "block";
-}
 

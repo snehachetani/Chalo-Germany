@@ -125,6 +125,49 @@ Author Name: Soumya Shaw, Sneha Chetani
                     </div>
                 </div>
             </div>
+            <div class = "services-container">
+                <div class="services-card">
+                    <div class="number">05</div>
+                    <div class="tab-inner">
+                        <h3>Career Guidance</h3>
+                        <div class="tab-body">We provide resources for career planning, job search,
+                             and interview preparation tailored to graduates of Ausbildung programs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "services-container">
+                <div class="services-card">
+                    <div class="number">06</div>
+                    <div class="tab-inner">
+                        <h3>Resources and Downloads</h3>
+                        <div class="tab-body">We present downloadable materials, including brochures,
+                             application templates, and informative guides related to Ausbildung.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "services-container">
+                <div class="services-card">
+                    <div class="number">07</div>
+                    <div class="tab-inner">
+                        <h3>Student Support Services</h3>
+                        <div class="tab-body">We offer support with accommodation, orientation, 
+                            and any other essential services required by international students.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "services-container">
+                <div class="services-card">
+                    <div class="number">08</div>
+                    <div class="tab-inner">
+                        <h3>Onboard with German</h3>
+                        <div class="tab-body">Commence complimentary A1 level classes instructed by a C1 certified teacher.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
 
@@ -250,61 +293,7 @@ Author Name: Soumya Shaw, Sneha Chetani
      </footer>
    
 
-    <!-- Footer Start 
-    <footer>
-        <div class="footer">
-            <img class="demo-bg" src="img/germanflag.jpg" alt="">
-            <div class="container">
-                <div class="row-uni">
-                    <div class="col-uni-xs-12 col-uni-sm-3 col-uni-md-3 col-uni-lg-3">
-                        <h4 class="title">Quick Links</h4>
-                        <span class="animate-border border-black"></span>
-                        <ul class="footer-li">
-                            <li><a href="" target="_blank">Home</a></li>
-                            <li><a href="" target="_blank">Our Services</a></li>
-                            <li><a href="" target="_blank">Blogs</a></li>
-                            <li><a href="" target="_blank">Events</a></li>
-                            <li><a href="" target="_blank">FAQs</a></li>
-                            <li><a href="" target="_blank">Contact us</a></li>                 
-                        </ul>                        
-                    </div>
-                    <div class="col-uni-xs-12 col-uni-sm-3 col-uni-md-3 col-uni-lg-3">
-                        <h4 class="title">Student Services</h4>
-                        <span class="animate-border border-black"></span>
-                        <ul class="footer-li">
-                            <li><a href="">Application Guidance</a></li> 
-                            <li><a href="">Career Counselling</a></li>
-                            <li><a href="">CV Guidance</a></li>
-                            <li><a href="">Visa Guidance</a></li> 
-                            <li><a href="">Finance Assistance</a></li>
-                            <li><a href="">Acommodation Guidance</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-uni-xs-12 col-uni-sm-3 col-uni-md-3 col-uni-lg-3">
-                        <h4 class="title">Contact Us</h4>
-                        <span class="animate-border border-black"></span>
-                        <ul class="footer-li-contact">
-                            <li><a href="" target="Tel">Tel.</a></li>
-                            <li><a href="" target="Email">Email:</a></li>
-                            <div class="clearfix"></div>
-                        </ul>
-                    </div>   
-                    <div class="col-uni-xs-12 col-uni-sm-3 col-uni-md-3 col-uni-lg-3">
-                        <h4 class="title">Follow Us</h4>
-                        <span class="animate-border border-black"></span>
-                        <ul class="footer-li-social">
-                            <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fa fa-google"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <div class="clearfix"></div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer -->
-    <!-- Footer End -->
+    
 
     <!-- Javascript -->
     <!-- script type="text/javascript" src="js/preloader.js"></script>
@@ -340,6 +329,24 @@ Author Name: Soumya Shaw, Sneha Chetani
             }
         }
     </script -->
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth' // This enables smooth scrolling
+            });
+        }
+    });
+});
+</script>
 </body>
 <script src="js/main.js"></script>
 </html>
