@@ -108,13 +108,9 @@ img {
     display: flex;
     margin: auto;
     position: fixed;
-<<<<<<< Updated upstream
-    height: 90px;
-=======
     top: 30px; /* Adjust the top position to make space for the top-nav */
     left: 0; 
     height: 80px;
->>>>>>> Stashed changes
     width: 100%;
     z-index: 1000;
     padding: 10px 0;
@@ -126,17 +122,9 @@ img {
 }
 
 .menu {
-<<<<<<< Updated upstream
-    /*position: absolute;
-    right: 1em;
-    top: 6px;*/
-    float: right;
-    background-color: #00BB31;
-=======
     position: relative;
     height: 100%;
     
->>>>>>> Stashed changes
 }
 .logo-img {
     max-width: 100%;
