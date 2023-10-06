@@ -77,6 +77,70 @@ Author Name: Soumya Shaw, Sneha Chetani
         </ul>
     </section>
     <!-- Background Carousel End -->
+
+
+    <!-- Contact Us Start -->
+    <section class="contact-us-area">
+        <h2 class="contact-us-heading">Contact Us</h2>
+        <div class="outer-contact">
+            <div class="inner-contact" id="inner-contact-left"></div>
+                
+            <div class="inner-contact" id="inner-contact-right">
+                <div class="form">
+                    <form id="contact-us-form" action="https://formspree.io/f/xgejpnbz" method="POST">
+                        <div class="form-group">
+                            <input id="first-name" name="First Name" type="text" class="form-control" placeholder="First Name" required>
+                            <input id="last-name" name="Last Name" type="text" class="form-control" placeholder="Last Name" >
+                        </div>
+                        <div class="form-group">
+                            <input id="email-id" name="Email" type="email" class="form-control" placeholder="Mail ID" required>
+                            <input id="phone-no" name="Phone Number" type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="city" name="Your City" type="text" class="form-control" placeholder="Your City" required>
+                            <select id="german-level" name="German Level" class="form-control" required>
+                                <option hidden="">German Level</option>
+                                <option>Beginner</option>
+                                <option>A1</option>
+                                <option>A2</option>
+                                <option>B1</option>
+                                <option>B2</option>
+                                <option>C1</option>
+                                <option>C2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input id="instagram-id" name="Instagram ID" type="text" class="form-control" placeholder="Instagram ID" >
+                            <input id="referral-code" name="Referal Code" type="text" class="form-control" placeholder="Referral Code" required>
+                        </div>
+                        <div class="form-group">
+                            <!--<textarea id="description" name="Description" class="form-control" rows="6" cols="60" placeholder="How did you hear about us" required></textarea> -->
+                            <select id="description" name="Description" class="form-control"  required>
+                                <option hidden="">How did you hear about us?</option>
+                                <option>Google/Search Engine</option>
+                                <option>Peer Referral</option>
+                                <option>Social Media</option>
+                                <option>Blog or Publication</option>
+                                <option>Event</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" class="form-control" id="check-me" onchange="checkbox()"/>
+                            <label id="check-me-label" for="check-me">I have read and agree with the <a id="privacy-policy-link" href="privacy-policy.html" target="_blank">Privacy Policy</a></label>
+                        </div>
+                        <div class="submit-placement">
+                            <button type="submit" id="submit-button" title="Please agree to the Privacy Policy" class="btn btn-success" value="Send">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Contact Us End -->
+
+
     
     <!-- Services Start -->
     <section class="services" id="services">
@@ -190,59 +254,7 @@ Author Name: Soumya Shaw, Sneha Chetani
 
 
 
-    <!-- Contact Us Start -->
-    <section class="contact-us-area">
-        <h2 class="contact-us-heading">Contact Us</h2>
-        <div class="outer-contact">
-            <div class="inner-contact" id="inner-contact-left"></div>
-                
-            <div class="inner-contact" id="inner-contact-right">
-                <div class="form">
-                    <form id="contact-us-form" action="https://formspree.io/f/xgejpnbz" method="POST">
-                        <div class="form-group">
-                            <input id="first-name" name="First Name" type="text" class="form-control" placeholder="First Name" required>
-                            <input id="last-name" name="Last Name" type="text" class="form-control" placeholder="Last Name" >
-                        </div>
-                        <div class="form-group">
-                            <input id="email-id" name="Email" type="email" class="form-control" placeholder="Mail ID" required>
-                            <input id="phone-no" name="Phone Number" type="tel" class="form-control" placeholder="Phone Number" required>
-                        </div>
-                        <div class="form-group">
-                            <input id="city" name="Your City" type="text" class="form-control" placeholder="Your City" required>
-                            <select id="german-level" name="German Level" class="form-control" required>
-                                <option hidden="">German Level</option>
-                                <option>Beginner</option>
-                                <option>A1</option>
-                                <option>A2</option>
-                                <option>B1</option>
-                                <option>B2</option>
-                                <option>C1</option>
-                                <option>C2</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input id="instagram-id" name="Instagram ID" type="text" class="form-control" placeholder="Instagram ID" >
-                            <input id="referral-code" name="Referal Code" type="text" class="form-control" placeholder="Referral Code" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="description" name="Description" class="form-control" rows="6" cols="60" placeholder="How did you hear about us" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" class="form-control" id="check-me" onchange="checkbox()"/>
-                            <label id="check-me-label" for="check-me">I have read and agree with the <a id="privacy-policy-link" href="privacy-policy.html" target="_blank">Privacy Policy</a></label>
-                        </div>
-                        <div class="submit-placement">
-                            <button type="submit" id="submit-button" title="Please agree to the Privacy Policy" class="btn btn-success" value="Send">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
-            
-        </div>
-        </div>
-    </section>
-    <!-- Contact Us End -->
+    
 
 
     <footer class="footer">
