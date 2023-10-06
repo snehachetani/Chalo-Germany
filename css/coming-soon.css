@@ -90,12 +90,10 @@ h1 + p {
   &.contact {
     right: 2rem;
     bottom: 0.2rem;
-    border-radius: 0.3rem 0 0 0.3rem;
   }
    &.yt {
     right: 0.8rem;
     bottom: 3.3rem;
-    border-radius: 0.3rem 0 0 0.3rem;
   }
   &.not-found {
     width: 12rem;

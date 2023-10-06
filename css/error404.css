@@ -13,12 +13,25 @@ Author Name: Soumya Shaw
 =======================*/
 
 
-.page_404 { padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+.page_404 { 
+padding:40px 0; 
+background:  linear-gradient(90deg, #e4ebf5 0%, #fff 12%, #fff 88%, #e4ebf5 100%);
+font-family: 'Arvo', serif;
 }
 
 .page_404  img { width:100%;
 }
-
+.text-center h1{
+  font-size: 36px;
+  font-family: 'Young Serif', serif;
+  padding: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(100deg, #605dba 20%, #3f78e0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .four_zero_four_bg {
 background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
 height: 400px;
@@ -33,13 +46,18 @@ background-position: center;
 .four_zero_four_bg h3 {
 font-size:80px;
 }
-			 
+		
 .link_404 {			 
-color: #fff!important;
+color: #bbbbbb;
 padding: 10px 20px;
-background: #39ac31;
+background: #24262b;
 margin: 20px 0;
 display: inline-block;
+transition: color 0.4s ease-in-out;
+}
+.link_404:hover {
+  border: none;
+  color: white;
 }
 .contant_box_404 { 
 margin-top:-50px;
