@@ -221,7 +221,7 @@ li {
     animation: imageAnimation 54s linear infinite 0s; 
 }
 .cb-slideshow li div {
-    z-index: 1000;
+    z-index: 995;
     position: absolute;
     bottom: 30px;
     left: 0px;
@@ -291,7 +291,7 @@ li {
     animation-delay: 30s; 
 }
 .cb-slideshow li:nth-child(7) div { 
-    animation-delay: 3s6; 
+    animation-delay: 36s; 
 }
 .cb-slideshow li:nth-child(8) div { 
     animation-delay: 42s; 
