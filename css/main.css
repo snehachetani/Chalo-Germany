@@ -690,7 +690,7 @@ input[type="checkbox"]
     padding: 0px;
     text-align: center;
     color: #00BB31;
-    background: linear-gradient(#e4ebf5, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff);
+    background: linear-gradient(#e4ebf5, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #e4ebf5);
 }
 
 .services-heading h2{
@@ -776,15 +776,17 @@ input[type="checkbox"]
       06. Gallery CSS Start
 ----------------------------------*/
 .gallery-section {
-    margin: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
+    padding-bottom: 60px;
+    background: linear-gradient(#e4ebf5, #fff, #fff, #fff, #fff, #fff, #fff, #e4ebf5);
 }
 .gallery-heading h2{
     font-size: 36px;
     font-family: 'Young Serif', serif;
+    text-align: center;
     padding: 30px;
     margin-top: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     padding-bottom: 30px;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(100deg, #605dba 20%, #3f78e0);
