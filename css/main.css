@@ -186,7 +186,7 @@ nav#dot-nav a.active {
 /*--------------------------------
       03. Home CSS
 ----------------------------------*/
-.home {
+.home-area {
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -370,7 +370,6 @@ div.bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
     pad: 20px;
     padding: 30px;
     display: flex;
@@ -851,50 +850,49 @@ input[type="checkbox"]
 
 body{
     line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-  }
-  *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  }
-  .container{
-    max-width: 1170px;
-    margin:auto;
-  }
-  .row{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul{
-    list-style: none;
-  }
-  .footer{
-    background-color: #24262b;
-      padding: 70px 0;
-  }
-  .footer-col{
-     width: 25%;
-     padding: 0 15px;
-  }
-  .footer-li{
-    text-align: left;
-    
-  }
-  #footer-content1{
-    padding-left: 90px;
-  }
+}
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+.container{
+max-width: 1170px;
+margin:auto;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+ul{
+list-style: none;
+}
+.footer{
+background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-li{
+text-align: left;
 
-  #footer-content2{
-    padding-left: 60px;
-  }
-  
-  .footer-li-social {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+}
+#footer-content1{
+padding-left: 90px;
+}
+
+#footer-content2{
+padding-left: 60px;
+}
+
+.footer-li-social {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
 }
 .footer-li-social li {
     margin-right: 15px; /* Adjust the spacing between icons */
