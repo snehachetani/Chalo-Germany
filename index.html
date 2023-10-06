@@ -36,8 +36,6 @@ Author Name: Soumya Shaw, Sneha Chetani
 </head>
 
 <body>
-    
-
     <!-- Navigation Start -->
     <div>
         <div class="top-nav"></div>
@@ -83,7 +81,22 @@ Author Name: Soumya Shaw, Sneha Chetani
     <section class="contact-us-area">
         <h2 class="contact-us-heading">Contact Us</h2>
         <div class="outer-contact">
-            <div class="inner-contact" id="inner-contact-left"></div>
+            <div class="inner-contact" id="inner-contact-left">
+                <div class="components">
+                    <div class="clock">
+                        <div class="hand hours"></div>
+                        <div class="hand minutes"></div>
+                        <div class="hand seconds"></div>
+                        <div class="point"></div>
+                        <div class="marker">
+                            <span class="marker__1"></span>
+                            <span class="marker__2"></span>
+                            <span class="marker__3"></span>
+                            <span class="marker__4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 
             <div class="inner-contact" id="inner-contact-right">
                 <div class="form">
@@ -110,8 +123,12 @@ Author Name: Soumya Shaw, Sneha Chetani
                             </select>
                         </div>
                         <div class="form-group">
-                            <input id="instagram-id" name="Instagram ID" type="text" class="form-control" placeholder="Instagram ID" >
-                            <input id="referral-code" name="Referal Code" type="text" class="form-control" placeholder="Referral Code" required>
+                            <input id="instagram-id" name="Instagram ID" type="text" class="form-control" placeholder="Instagram ID (optional)" >
+                            <select id="referral-code" name="Referral Code" class="form-control" required>
+                                <option hidden="">Referral Code</option>
+                                <option>ambrotKR</option>
+                                <option>ambrotDN</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <!--<textarea id="description" name="Description" class="form-control" rows="6" cols="60" placeholder="How did you hear about us" required></textarea> -->
@@ -125,10 +142,10 @@ Author Name: Soumya Shaw, Sneha Chetani
                                 <option>Other</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <!--div class="form-group">
                             <input type="checkbox" class="form-control" id="check-me" onchange="checkbox()"/>
                             <label id="check-me-label" for="check-me">I have read and agree with the <a id="privacy-policy-link" href="privacy-policy.html" target="_blank">Privacy Policy</a></label>
-                        </div>
+                        </div-->
                         <div class="submit-placement">
                             <button type="submit" id="submit-button" title="Please agree to the Privacy Policy" class="btn btn-success" value="Send">Submit</button>
                         </div>
@@ -143,7 +160,7 @@ Author Name: Soumya Shaw, Sneha Chetani
 
     
     <!-- Services Start -->
-    <section class="services" id="services">
+    <section class="services" id="services-area">
         <div class="services-heading">
             <h2>Services</h2>
         </div>
@@ -304,61 +321,25 @@ Author Name: Soumya Shaw, Sneha Chetani
         </div>
      </footer>
    
-
     
-
     <!-- Javascript -->
-    <!-- script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/dot-nav.js"></script -->
-    <!-- Custom JS -->
-    <!--script src="js/custom.js"></script>
     <script>
-        $('a[href^="#"]').on('click', function(event) {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
 
-            let target = $(this.getAttribute('href'));
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
 
-            if( target.length ) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top - 50
-                }, 1000);
-            }
-
-        });
-        
-        var checker = document.getElementById('check-me');
-        var sendbtn = document.getElementById('submit-button');
-        checker.checked = false;
-        sendbtn.disabled = true;
-        
-        function checkbox() {
-            document.getElementById('submit-button').disabled = !checker.checked;
-            if(checker.checked) {
-                sendbtn.removeAttribute("title");
-            }
-            else {
-                sendbtn.setAttribute("title", "Please agree to the Privacy Policy");
-            }
-        }
-    </script -->
-
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth' // This enables smooth scrolling
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth' 
+                    });
+                }
             });
-        }
-    });
-});
-</script>
+        });
+    </script>
 </body>
 <script src="js/main.js"></script>
 </html>
