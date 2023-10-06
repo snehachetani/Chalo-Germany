@@ -367,7 +367,6 @@ div.bg {
     background-clip: text;
 }
 .outer-contact {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -685,7 +684,7 @@ input[type="checkbox"]
 /*--------------------------------
      05. Services CSS
 ----------------------------------*/
-.services {
+.services-area {
     margin-top: 50px;
     margin: 0px;
     padding: 0px;
@@ -845,7 +844,7 @@ input[type="checkbox"]
 
 
 /*--------------------------------
-       06. Footer CSS Start
+       07. Footer CSS Start
 ----------------------------------*/
 
 body{
