@@ -852,10 +852,74 @@ body{
     line-height: 1.5;
 }
 *{
-margin:0;
-padding:0;
-box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
+.footer-container{
+    background-color: #24262b;
+    padding: 30px;
+    display: flex;
+}
+.footer-col-outer{
+    width: 25%;
+    padding-left: 60px;
+}
+.footer-title{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+#footer-title-id{
+    text-align: center;
+    margin-bottom: 25px;
+}
+#follow-us{
+    padding-left: 40px;
+}
+#footer-content-4 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-li li{
+    margin-bottom: 7px;
+}
+.footer-li li a{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+#footer-col-id li a:hover{
+    padding-left: 0px;
+}
+
+/*#quick-links{
+    background-color: #fff;
+}
+#student-services{
+    background-color: #fff;
+}
+#talk-to-us{
+    background-color: #fff;
+}
+#follow-us{
+    background-color: #fff;
+}*/
+/*
 .container{
 max-width: 1170px;
 margin:auto;
@@ -895,11 +959,11 @@ display: flex;
 justify-content: center;
 }
 .footer-li-social li {
-    margin-right: 15px; /* Adjust the spacing between icons */
+    margin-right: 15px; /* Adjust the spacing between icons *
 }
-/* Optionally, you can change the color or size of the icons */
+/* Optionally, you can change the color or size of the icons *
 .footer-li-social i {
-    font-size: 20px; /* Adjust the icon size */
+    font-size: 20px; /* Adjust the icon size *
 }
   .footer-col h4{
     font-size: 18px;
@@ -969,7 +1033,7 @@ justify-content: center;
     left: 46px;
     width: 68px;
   }
-  /*responsive*/
+  /*responsive*
   @media(max-width: 767px){
     .footer-col{
       width: 50%;
@@ -980,7 +1044,7 @@ justify-content: center;
     .footer-col{
       width: 100%;
   }
-  }
+  }*/
   
 
 
