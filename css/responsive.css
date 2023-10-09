@@ -1,16 +1,319 @@
 /* CSS Document
-Project Name: AntPod Website
+Project Name: Chalo Germany Website
 Version:  1.0
-Author Name: Soumya Shaw
+Author Name: Soumya Shaw, Sneha Chetani
 Responsive.css
 */
 
+/*****=====***** TABLE OF CONTENT *****=====*****
+
+01. GENERAL CSS
+    => General CSS
+02. Navigation Bar CSS
+03. Home CSS
+04. Contact Us CSS
+05. Gallery CSS
+06. Footer CSS
+*/
+
+/*----------------------
+    01. General CSS
+----------------------*/
+
+/*-------------------------------
+    02. Navigation Bar CSS
+-------------------------------*/
+
+/* Screen Width Responsiveness */
+@media (max-width:320px)  { 
+    
+}
+@media (max-width:480px)  {
+    
+}
+@media (max-width:600px)  { 
+    
+}
+@media (max-width:700px)  { 
+    .menu {
+        display: none;
+    }
+
+}
+@media (max-width:800px)  and (min-width: 700px) { 
+    .empty-region {
+        flex: 3;
+    }
+    .menu {
+        display: none;
+    }
+}
+@media (max-width:900px)  and (min-width: 800px) { 
+    .empty-region {
+        display: none;
+    }
+}
+@media (max-width:1025px) and (min-width: 800px){ 
+    .चलोGermany-logo {
+        flex: 1
+    }
+    .empty-region {
+        flex: 1;
+    }
+    .menu {
+        flex: 4;
+    }
+}
+@media (max-width:1281px) { 
+    .menu {
+        flex: 4;
+    }
+}
+
+/*------------------------
+      03. Home CSS
+--------------------------*/
+
+@media screen and (max-width:320px)  { 
+
+}
+@media screen and (max-width:480px)  {
+    
+}
+@media screen and (max-width:600px) and (min-width: 400px)  { 
+    .cb-slideshow li div h3 {
+        font-size: 60px 
+    }
+}
+@media screen and (max-width:700px) { 
+    .home-content {
+        width: 90%;
+        position: relative;
+        top: 350px;
+        left: 20px;
+    }
+    .home-area {
+        height: 640px;
+    }
+}
+@media screen and (max-width:800px) and (min-width: 600px) { 
+    .cb-slideshow li div h3 {
+        font-size: 80px 
+    }
+}
+@media screen and (max-width:1025px) and (min-width: 800px) { 
+    .cb-slideshow li div h3 {
+        font-size: 100px 
+    }
+}
+@media screen and (max-width:1281px) { 
+
+}
+
+/*--------------------------------
+     04. Contact Us CSS Start
+----------------------------------*/
+
+@media (max-width:320px)  { 
+}
+@media (max-width:480px)  {
+    
+}
+@media (max-width:600px)  { 
+}
+@media screen and (max-width:700px) {
+    .contact-us-area {
+        padding: 15px;
+    }
+    .form-control {
+        margin-left: 0px;
+    }
+    .outer-contact {
+        display: block;
+    }
+    #inner-contact-left {
+        border-right: none;
+        margin-bottom: 40px;
+    }
+    #inner-contact-right {
+        border-left: none;
+    }
+    iframe {
+        border-radius: 10px;
+        border: 1px solid;
+        width: 100%;
+        height: 200px;
+    }
+    #first-name {
+        margin-right: 5px;
+    }
+    #company-name {
+        margin-right: 5px;
+    }
+    .write {
+        margin-top: 30px;
+        font-size: 18px;
+        width: 250px;
+    }
+    .mail {
+        font-size: 16px;
+        padding-top: 10px;
+        text-align: left;
+        position: relative;
+        left: -13px;
+        width: 100%;
+    }
+    .outer-contact {
+        padding-bottom: 0px;
+    }
+    
+
+
+/*--------------------------------
+     05. Services CSS
+----------------------------------*/
+
+@media (max-width:320px)  { 
+}
+@media (max-width:480px)  {
+    
+}
+@media (max-width:600px)  { 
+}
+@media (max-width:700px)  {
+    .services-heading h2 {
+        padding-top: 10px;
+}
+@media (max-width:800px)  { 
+    
+}
+@media (max-width:1025px) { 
+
+}
+@media (max-width:1281px) { 
+    
+}
+
+/*--------------------------------
+      06. Gallery CSS Start
+----------------------------------*/
+
+@media (max-width:320px)  { 
+}
+@media (max-width:480px)  {
+    
+}
+@media (max-width:600px)  { 
+}
+@media (max-width:800px)  { 
+    
+}
+@media (max-width:1025px) { 
+
+}
+@media (max-width:1281px) { 
+    
+}
+
+/*--------------------------------
+       07. Footer CSS Start
+----------------------------------*/
+
+@media (max-width:320px)  { 
+}
+@media (max-width:480px)  {
+    
+}
+@media (max-width:700px)  { 
+    .row {
+        display: block;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    #col-4-pc-1 {
+        display: none;
+    }
+    #col-4-pc-2 {
+        display: none;
+    }
+    .flex-mobile {
+        display: flex;
+        text-align: center;
+    }
+    .flex-mobile .col-4 {
+        flex: 50%;
+    }
+    .flex-pc {
+        display: none;
+    }
+    #footer-logo {
+        width: 250px;
+        position: relative;
+        top: 5px;
+        left: 63px;
+    }
+    .footer-ul {
+        padding: 20px;
+        padding-right: 0px;
+        position: relative;
+        left: 10px;
+    }
+    .footer-ul-follow-us {
+        padding: 10px;
+        padding-bottom: 7.5px;
+        left: 12px;
+        text-align: center;
+        width: 100%;
+    }
+    .social-media {
+        display: flex;
+        width: 102%;
+        display: block;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .social-media-inner {
+        text-align: center;
+    }
+    .footer-bottom {
+        display: block;
+    }
+}
+@media (max-width:800px)  { 
+    .inner-contact {
+        padding-right: 0px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:1025px) { 
+
+}
+@media (max-width:1281px) { 
+    
+}
+}
+@media (max-width:800px)  { 
+    
+}
+@media (max-width:1025px) { 
+
+}
+@media (max-width:1281px) { 
+    
+}
+
+
+
+
+/*
 @media only screen and (max-width:700px) {
     #dot-nav {
         display: none;
     }
 
-    /*   Navbar CSS  */
+    /*   Navbar CSS  *
     .menu {
         display: none;
     }
@@ -21,7 +324,7 @@ Responsive.css
         margin-left: 20px;
     }
 
-    /*   Home CSS    */
+    /*   Home CSS    *
     .home-content {
         width: 90%;
         position: relative;
@@ -32,7 +335,7 @@ Responsive.css
         height: 640px;
     }
 
-    /*  Technology CSS  */
+    /*  Technology CSS  *
     .tech-row {
         flex: 70%;
         text-align: center;
@@ -100,7 +403,7 @@ Responsive.css
         margin-left: 0px;
     }
 
-    /*   About Us CSS    */
+    /*   About Us CSS    *
     .about-bounding {
         display: block;
     }
@@ -147,7 +450,7 @@ Responsive.css
         top: 0px;
     }
 
-    /*   Team CSS    */
+    /*   Team CSS    *
     .team-area {
         height: auto;
         margin-top: -50px;
@@ -172,7 +475,7 @@ Responsive.css
     display: block;
 }
     
-    /*   Contact Us CSS    */
+    /*   Contact Us CSS    *
     .contact-us-area {
         padding: 15px;
     }
@@ -215,7 +518,7 @@ Responsive.css
         width: 100%;
     }
     
-    /*   Footer CSS    */
+    /*   Footer CSS    *
     .row {
         display: block;
     }
@@ -278,7 +581,7 @@ Responsive.css
         display: none;
     }
 
-    /*   Navbar CSS  */
+    /*   Navbar CSS  *
     .menu {
         display: none;
     }
@@ -289,7 +592,7 @@ Responsive.css
         margin-left: 20px;
     }
 
-    /*   Home CSS    */
+    /*   Home CSS    *
     .home-content {
         width: 90%;
         position: relative;
@@ -300,7 +603,7 @@ Responsive.css
         height: 1024px;
     }
 
-    /*  Technology CSS  */
+    /*  Technology CSS  *
     .tech-row {
         flex: 50%;
         text-align: left;
@@ -373,7 +676,7 @@ Responsive.css
         padding-left: 20px;
     }
 
-    /*   About Us CSS    */
+    /*   About Us CSS    *
     .about-bounding {
         display: block;
     }
@@ -420,7 +723,7 @@ Responsive.css
         top: 0px;
     }
 
-    /*   Team CSS    */
+    /*   Team CSS    *
     .team-area {
         height: auto;
         margin-top: -50px;
@@ -442,7 +745,7 @@ Responsive.css
         font-size: 17px;
     }
     
-    /*   Contact Us CSS    */
+    /*   Contact Us CSS    *
     .contact-us-area {
         padding: 15px;
     }
@@ -486,7 +789,7 @@ Responsive.css
         width: 100%;
     }
     
-    /*   Footer CSS    */
+    /*   Footer CSS    *
     .row {
         display: block;
     }
@@ -591,3 +894,4 @@ Responsive.css
         left: -90px;
     }
 }
+*/

@@ -1,9 +1,11 @@
 /* CSS Document
-Project Name:  Website
+Project Name: Chalo Germany Website
 Version:  1.0
 Author Name: Soumya Shaw, Sneha Chetani
+main.css
+*/
 
-*****=====***** TABLE OF CONTENT *****=====*****
+/*****=====***** TABLE OF CONTENT *****=====*****
 
 01. GENERAL CSS
     => General CSS
@@ -183,6 +185,8 @@ nav#dot-nav a.active {
 }
 
 
+
+
 /*--------------------------------
       03. Home CSS
 ----------------------------------*/
@@ -338,14 +342,6 @@ div.bg {
     16% { opacity: 0 }
     100% { opacity: 0 }
 }
-@media screen and (max-width: 1140px) { 
-    .cb-slideshow li div h3 { font-size: 140px }
-}
-@media screen and (max-width: 600px) { 
-    .cb-slideshow li div h3 { font-size: 80px }
-}
-
-
 
 /*--------------------------------
      04. Contact Us CSS Start
@@ -678,6 +674,7 @@ input[type="checkbox"]
     color: black !important;
 }
 
+/* Screen Width Responsiveness */
 
 
 /*--------------------------------
@@ -770,7 +767,6 @@ input[type="checkbox"]
 
 
 
-
 /*--------------------------------
       06. Gallery CSS Start
 ----------------------------------*/
@@ -841,9 +837,6 @@ input[type="checkbox"]
 
 
 
-
-
-
 /*--------------------------------
        07. Footer CSS Start
 ----------------------------------*/
@@ -861,6 +854,16 @@ body{
     padding: 30px;
     display: flex;
 }
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 80px;
+}
 .footer-col-outer{
     width: 25%;
     padding-left: 60px;
@@ -873,7 +876,7 @@ body{
     font-weight: 500;
     position: relative;
 }
-#footer-title-id{
+#follow-us-title{
     text-align: center;
     margin-bottom: 25px;
 }
@@ -903,152 +906,44 @@ body{
     color: #ffffff;
     padding-left: 8px;
 }
-#footer-col-id li a:hover{
+#talk-to-us{
+    padding-left: 90px;
+}
+#quick-links-title::before{
+    width: 100px;
+}
+#student-services-title::before{
+    width: 148px;
+}
+#talk-to-us-title::before{
+    width: 98px;
+}
+#follow-us-title::before{
+    width: 85px;
+    left: 54px;
+}
+#follow-us-title li a:hover{
     padding-left: 0px;
 }
 
-/*#quick-links{
-    background-color: #fff;
+/* Screen Width Responsiveness */
+@media (max-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 }
-#student-services{
-    background-color: #fff;
+@media (max-width:480px)  {
+    /* smartphones, Android phones, landscape iPhone */ 
 }
-#talk-to-us{
-    background-color: #fff;
+@media (max-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
 }
-#follow-us{
-    background-color: #fff;
-}*/
-/*
-.container{
-max-width: 1170px;
-margin:auto;
+@media (max-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 }
-.row{
-display: flex;
-flex-wrap: wrap;
+@media (max-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
 }
-ul{
-list-style: none;
+@media (max-width:1281px) { 
+    /* hi-res laptops and desktops */ 
 }
-.footer{
-background-color: #24262b;
-    padding: 70px 0;
-}
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
-}
-.footer-li{
-text-align: left;
-
-}
-#footer-content1{
-padding-left: 90px;
-}
-
-#footer-content2{
-padding-left: 60px;
-}
-
-.footer-li-social {
-list-style: none;
-padding: 0;
-margin: 0;
-display: flex;
-justify-content: center;
-}
-.footer-li-social li {
-    margin-right: 15px; /* Adjust the spacing between icons *
-}
-/* Optionally, you can change the color or size of the icons *
-.footer-li-social i {
-    font-size: 20px; /* Adjust the icon size *
-}
-  .footer-col h4{
-    font-size: 18px;
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-  }
-  .footer-col h4::before{
-    content: '';
-    position:absolute;
-    left:0;
-    bottom: -10px;
-    background-color: #e91e63;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-  }
-
-  .footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
-  }
-  .footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  .footer-col ul li a:hover{
-    color: #ffffff;
-    padding-left: 8px;
-  }
-  .footer-col .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
-  }
-  .footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
-  }
-  #quick-links::before{
-    left: 93px;
-    width: 80px;
-  }
-  #student-services::before{
-    left: 19px;
-    width: 122px;
-  }
-  #contact-us::before{
-    left: 40px;
-    width: 78px;
-  }
-  #follow-us::before{
-    left: 46px;
-    width: 68px;
-  }
-  /*responsive*
-  @media(max-width: 767px){
-    .footer-col{
-      width: 50%;
-      margin-bottom: 30px;
-  }
-  }
-  @media(max-width: 574px){
-    .footer-col{
-      width: 100%;
-  }
-  }*/
-  
-
-
-
-
 
 
