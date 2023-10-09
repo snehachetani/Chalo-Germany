@@ -928,6 +928,17 @@ body{
 #follow-us-title li a:hover{
     padding-left: 0px;
 }
+.made-by{
+    background-color: #24262b;
+    padding: 15px;
+    color: #bbbbbb;
+    text-align: center;
+    font-size: 12px;
+}
+.scube:hover{
+    color: #ffffff;
+}
+
 @media (max-width:500px)  { 
     .footer-col-outer {
         width: calc(100%);
