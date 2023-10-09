@@ -853,6 +853,8 @@ body{
     background-color: #24262b;
     padding: 30px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .footer-col h4::before{
     content: '';
@@ -865,8 +867,9 @@ body{
     width: 80px;
 }
 .footer-col-outer{
-    width: 25%;
+    /*width: 25%;*/
     padding-left: 60px;
+    width: calc(25% - 50px);
 }
 .footer-title{
     font-size: 20px;
@@ -925,25 +928,51 @@ body{
 #follow-us-title li a:hover{
     padding-left: 0px;
 }
-
-/* Screen Width Responsiveness */
-@media (max-width:320px)  { 
-    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media (max-width:500px)  { 
+    .footer-col-outer {
+        width: calc(100%);
+        padding-left: 0px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    #talk-to-us {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    #follow-us {
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 0px;
+    }
+    #follow-us-title {
+        text-align: center;
+    }
+    .footer-col h4::before {
+        left: auto;
+    }
+    #follow-us-title::before {
+        left: auto;
+    }
 }
-@media (max-width:480px)  {
-    /* smartphones, Android phones, landscape iPhone */ 
+@media (max-width: 900px) and (min-width: 500px)  { 
+    .footer-col-outer {
+        width: calc(50% - 50px);
+    }
+    #talk-to-us {
+        padding-left: 60px;
+        padding-top: 30px;
+    }
+    #follow-us {
+        padding-left: 60px;
+        padding-top: 30px;
+    }
+    #follow-us-title {
+        text-align: left;
+    }
+    #follow-us-title::before {
+        left: 0px;
+    }
+    #footer-content-4 {
+        margin-left: -27px;
+    }
 }
-@media (max-width:600px)  { 
-    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-}
-@media (max-width:801px)  { 
-    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-}
-@media (max-width:1025px) { 
-    /* big landscape tablets, laptops, and desktops */ 
-}
-@media (max-width:1281px) { 
-    /* hi-res laptops and desktops */ 
-}
-
-

@@ -224,63 +224,6 @@ Responsive.css
 @media (max-width:480px)  {
     
 }
-@media (max-width:700px)  { 
-    .row {
-        display: block;
-    }
-    .col-4 {
-        width: 100%;
-    }
-    #col-4-pc-1 {
-        display: none;
-    }
-    #col-4-pc-2 {
-        display: none;
-    }
-    .flex-mobile {
-        display: flex;
-        text-align: center;
-    }
-    .flex-mobile .col-4 {
-        flex: 50%;
-    }
-    .flex-pc {
-        display: none;
-    }
-    #footer-logo {
-        width: 250px;
-        position: relative;
-        top: 5px;
-        left: 63px;
-    }
-    .footer-ul {
-        padding: 20px;
-        padding-right: 0px;
-        position: relative;
-        left: 10px;
-    }
-    .footer-ul-follow-us {
-        padding: 10px;
-        padding-bottom: 7.5px;
-        left: 12px;
-        text-align: center;
-        width: 100%;
-    }
-    .social-media {
-        display: flex;
-        width: 102%;
-        display: block;
-        padding-bottom: 10px;
-        padding-left: 0px;
-        text-align: center;
-    }
-    .social-media-inner {
-        text-align: center;
-    }
-    .footer-bottom {
-        display: block;
-    }
-}
 @media (max-width:800px)  { 
     .inner-contact {
         padding-right: 0px;
@@ -293,17 +236,6 @@ Responsive.css
 @media (max-width:1281px) { 
     
 }
-}
-@media (max-width:800px)  { 
-    
-}
-@media (max-width:1025px) { 
-
-}
-@media (max-width:1281px) { 
-    
-}
-
 
 
 
